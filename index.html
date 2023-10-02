@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style/all.min.css">
+    <title>CAULFIELD INVESTMENTS LIMITED</title> 
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon.png">
+</head>
+<body>
+
+    <!-- 捲軸捲動時加上.--fix 行動裝置打開menu .--open -->
+    <header id="header" class="pd_RLauto">
+        <h1 onclick="menuScTo(0)">
+            CAULFIELD <code>INVESTMENTS LIMITED</code>
+        </h1>
+
+        <ul class="menu" id="menu">
+            <li id="toHome" onclick="menuScTo(0)">Home</li>
+            <li id="toService">Our Service</li>
+            <li id="toAbout" onclick="menuScTo(3)">About</li>
+            <li id="toContact" onclick="menuScTo(4)">Contact Us</li>
+        </ul>
+
+        <div class="ham_btn" id="ham_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    
+
+    
+    <!-- content -->
+    <main>
+        <!-- slider -->
+        <div class="slider">
+        </div>
+        <!-- slider end -->
+
+
+
+
+
+        <!-- about -->
+        <div id="about" class="about pd_RLauto pd_TBauto">
+            <h2 class="about__title">About Us</h2>
+            <div class="about__img" data-aos="fade-right" data-aos-duration="600" data-aos-once="true">
+                <img class="pad" data-aos="fade-down" data-aos-duration="600" data-aos-delay="800" data-aos-once="true"
+                    src="images/img_about_pad.png">
+                <img class="ph" data-aos="fade-down" data-aos-duration="600" data-aos-delay="1200" data-aos-once="true"
+                    src="images/img_about_ph.png">
+            </div>
+        
+            <ul class="about__txt" data-aos="fade-left" data-aos-duration="600" data-aos-once="true">
+                <li>Founded in 2014, we initially provided investment-related services and later collaborated with Thomson Reuters to integrate their Elektron Real Time data source, offering clients comprehensive investment information and system services. Over the past decade, we have developed expertise in big data and analytics in the investment field.</li>
+                <li>In the future, we will partner with other companies to incorporate AI analysis, providing enhanced user experiences and greater investment success.</li>
+                <li>As we embark on this exciting journey together, we remain committed to empowering you with the best tools, data, and insights to achieve your financial goals. Here's to a brighter future of investment success.</li>
+            </ul>
+        </div>
+        <!-- about end -->
+
+
+
+
+
+        <!-- partner -->
+        <ul class="partner">
+            <li data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+                <a target="_blank" href="https://www.metatrader4.com/en">
+                    <img src="images/img_partner_MT4.png" alt="">
+                </a>
+            </li>
+            <li data-aos="fade-down" data-aos-duration="800" data-aos-once="true">
+                <a target="_blank" href="https://www.thomsonreuters.com/en.html">
+                    <img src="images/img_partner_TR.png" alt="">
+                </a>
+            </li>
+        </ul>
+        <!-- partner end -->
+
+
+
+
+
+        <!-- news -->
+        <div class="news pd_RLauto pd_TBauto">
+        
+            <div class="news__title">Global News</div>
+        
+            <div class="news__item owl-carousel owl-theme servicesCarouse" id="servicesCarouse">
+                <div onclick="window.open('https://www.reuters.com/markets/global-markets-wrapup-1-2023-08-02/','new_window');" class="news__item__txt serviceHref" data-aos="fade-up" data-aos-duration="800" data-aos-once="true"
+                    data-aos-offset="300">
+                    <img src="images/img_news01.jpg">
+                    <h3>Market News</h3>
+                    <p>Stocks drop, Treasuries gain after Fitch downgrades US rating</p>
+                </div>
+                <div onclick="window.open('https://www.reuters.com/sustainability/investors-green-companies-still-hard-find-with-new-emissions-reporting-rules-2023-08-02/','new_window');" class="news__item__txt serviceHref" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800"
+                    data-aos-once="true">
+                    <img src="images/img_news02.jpg">
+                    <h3>Carbon Market</h3>
+                    <p>For investors, green companies still hard to find with new emissions reporting rules</p>
+                </div>
+                <div onclick="window.open('https://www.reuters.com/technology/investing-ai-how-avoid-hype-2023-05-26/','new_window');" class="news__item__txt serviceHref" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1600"
+                    data-aos-once="true">
+                    <img src="images/img_news03.jpg">
+                    <h3>Market News</h3>
+                    <p>Investing in AI: how to avoid the hype</p>
+                </div>
+            </div>
+        </div>
+        <!-- news end -->
+
+
+
+
+        <!-- contact -->
+        <div id="contact" class="contact pd_RLauto pd_TBauto" id="contact">
+            <h2 class="contact__title">Venture Beyond to Find New Opportunities</h2>
+
+            <div class="contact__txt">
+                <p data-aos="fade-down" data-aos-duration="800">We value your privacy and are committed to protecting your information with utmost confidentiality.<br>
+                If you wish to find out more about our approach, wealth services or arrange for a non-obligatory consultation, please
+                reach out to us.</p>
+
+                <button onclick="location.href='mailto:contactus@caulfield-investment.global';" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200" class="more_btn" data-txt="Contact Us"></button>
+            </div>
+
+            <ul class="contact__item">
+                <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+                    <a href="mailto:contactus@caulfield-investment.global">
+                        <i class="icon_mail"></i>
+                        <code>contactus@caulfield-investment.global</code>
+                    </a>
+                </li>
+            
+                <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800">
+                    <a href="tel:+85237575623">
+                        <i class="icon_tel"></i>
+                        <code>+852 3757 5623</code>
+                    </a>
+                </li>
+                <li data-aos="zoom-in" data-aos-duration="800"  data-aos-delay="1200">
+                    <a class="no_hand">
+                        <i class="icon_address"></i>
+                        <code>
+                            Rm 1805-06, 18/F, Hollywood Plaza, 610 Nathan Road, Kowloon, Hong Kong
+                        </code>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- contact end -->
+
+
+
+
+
+        <!-- link -->
+        <div class="link pd_RLauto pd_TBauto">
+            <ul class="link__item">
+                <li data-aos="zoom-in-up" data-aos-duration="800"><a target="_blank" href="https://finance.yahoo.com/">
+                    <img src="images/img_link01.png" alt="Yahoo Finance">
+                </a></li>
+                <li data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="400"><a target="_blank" href="https://www.cnbc.com/">
+                    <img src="images/img_link02.png" alt="CNBC">
+                </a></li>
+                <li data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="800"><a target="_blank" href="https://www.marketwatch.com/">
+                    <img src="images/img_link03.png" alt="MarketWatch">
+                </a></li>
+                <li data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="1200"><a target="_blank" href="https://www.bloomberg.com/">
+                    <img src="images/img_link04.png" alt="Bloomberg">
+                </a></li>
+                <li data-aos="zoom-in-up" data-aos-duration="800"><a target="_blank" href="https://www.wsj.com/">
+                    <img src="images/img_link05.png" alt="Wall Street Journal">
+                </a></li>
+                <li data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="400"><a target="_blank" href="https://www.reuters.com/">
+                    <img src="images/img_link06.png" alt="Reuters">
+                </a></li>
+            </ul>
+        </div>
+        <!-- link end -->
+    </main>
+    <!-- content end -->
+
+    <footer class="pd_RLauto">
+        <!-- copyright -->
+        <div class="copyright">COPYRIGHT © 2014-2023 CAULFIELD INVESTMENT LIMITED. ALL RIGHTS RESERVED.</div>
+        <!-- copyright end -->
+    </footer>
+
+    
+    <!-- 可拖動響應式卡牌 -->
+    <script src='js/owlCarousel.js'></script>
+    <script src="js/self_index.js"></script>
+</body>
+</html>

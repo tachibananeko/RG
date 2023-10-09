@@ -37,7 +37,7 @@ $('#ham_btn').click(()=>{
     $('#header').toggleClass('--open');
 })
 
-$('#toService li, #toHome, #toAbout, #toContact').click(()=>{
+$('#toHome, #toAbout, #toProduct, #toSolution, #toContact').click(()=>{
     $('#header').removeClass('--open');
 })
 
@@ -55,7 +55,7 @@ function menuScTo(val){
 			case 3:
 				boxH = Number($(`#product`).offset().top); break;
 			case 4:
-				boxH = Number($(`#service`).offset().top); break;
+				boxH = Number($(`#solution`).offset().top); break;
             case 5:
             boxH = Number($(`#contact`).offset().top); break;
 		}

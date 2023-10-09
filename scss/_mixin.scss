@@ -173,6 +173,19 @@ $breakpoints: (
 	}
 }
 
+@mixin mw_custom($minmax, $breakpoints) {
+	@if $minmax==min{
+		@media screen and (min-width: $breakpoints) {
+			@content;
+		}
+	}
+	@else{
+		@media screen and (max-width: $breakpoints) {
+			@content;
+		}
+	}
+}
+
 // 筆電高度 766px 正常高度870px
 @mixin mw_lowhigh {
 	@media only screen and (max-height: 770px) and (min-width: 1025px) and (max-width: 1440px) {

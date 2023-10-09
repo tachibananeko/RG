@@ -87,6 +87,11 @@
     overflow: hidden;
     transform: translate3d(0, 0, 0);
     margin-bottom: 24px;
+    margin-top: 50px;
+    padding-top: 50px;
+    @include mw_xs{
+        margin-top: 30px;
+    }
 }
 
 .owl-carousel .owl-item,
@@ -157,7 +162,7 @@
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
     @extend %transition;
-    background-color: map-get($bg_color , secondary);
+    background: linear-gradient(to bottom, #050E29 0%, #141D38 100%);
 }
 
 .services {
@@ -185,7 +190,7 @@
 }
 
 .servicesCarouse .owl-dots .owl-dot.active span {
-    background-color: map-get($bg_color , secondary);
+    background: linear-gradient(to bottom, #050E29 0%, #141D38 100%);
 }
 
 .clientCarousel .owl-dots,

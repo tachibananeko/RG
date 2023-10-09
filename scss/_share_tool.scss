@@ -10,7 +10,7 @@
     position: relative;
     width: 100%;
     color: map-get($txt_color, primary);
-    font-size: 56px;
+    font-size: 40px;
     font-weight: bold;
     text-align: center;
 
@@ -187,7 +187,7 @@ $icon: (
 @each $name in $icon {
     .icon_#{$name} {
         display: inline-block;
-        background: url(../images/icon_#{$name}.svg) no-repeat center / contain;
+        background: url(../images/rg/icon_#{$name}.svg) no-repeat center / contain;
     }
 }
 

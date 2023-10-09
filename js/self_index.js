@@ -51,10 +51,13 @@ function menuScTo(val){
 		switch(val){
 			case 1: 
 			case 2:
+                boxH = Number($(`#about`).offset().top); break;
 			case 3:
-				boxH = Number($(`#about`).offset().top); break;
+				boxH = Number($(`#product`).offset().top); break;
 			case 4:
-				boxH = Number($(`#contact`).offset().top); break;
+				boxH = Number($(`#service`).offset().top); break;
+            case 5:
+            boxH = Number($(`#contact`).offset().top); break;
 		}
 		$(window).scrollTop(boxH - hdH);
 	}  

@@ -1,10 +1,11 @@
 // 字體顏色
 $txt_color: (
     primary: #000,
-    secondary: #ffbe65,
+    secondary: #ea5f4d,
     white: #fff,
-    lightgray: #c1c1c1,
+    lightgray: #eaeaea,
     darkgray: #323232,
+    darkblue: #00003c,
     shadow: rgba(0, 0, 0, .7),
     lightshadow: rgba(0, 0, 0, .3),
     white_shadow: hsla(0, 0%, 100%, 0.3),
@@ -12,8 +13,8 @@ $txt_color: (
 // 背景色
 $bg_color: (
     primary: #fff,
-    secondary: #ffbe65,
-    gray: #bebebe,
+    secondary: #ea5f4d,
+    gray: #ededed,
     black: #000,
     black_alpha: rgba(0, 0, 0, 0.7),
     gray_alpha: rgba(0, 0, 0, 0.5),

@@ -21,15 +21,14 @@
 
     <!-- 捲軸捲動時加上.--fix 行動裝置打開menu .--open -->
     <header id="header" class="pd_RLauto">
-        <h1 onclick="menuScTo(0)">
-            CAULFIELD <code>INVESTMENTS LIMITED</code>
-        </h1>
+        <h1 onclick="menuScTo(0)"></h1>
 
         <ul class="menu" id="menu">
-            <li id="toHome" onclick="menuScTo(0)">Home</li>
-            <li id="toService">Our Service</li>
-            <li id="toAbout" onclick="menuScTo(3)">About</li>
-            <li id="toContact" onclick="menuScTo(4)">Contact Us</li>
+            <li id="toHome" onclick="menuScTo(0)">HOME</li>
+            <li id="toAbout" onclick="menuScTo(2)">ABOUT</li>
+            <li id="toProduct" onclick="menuScTo(3)">PRODUCTS</li>
+            <li id="toSolution" onclick="menuScTo(4)">SOLUTIONS</li>
+            <li id="toContact" onclick="menuScTo(5)">CONTACT</li>
         </ul>
 
         <div class="ham_btn" id="ham_btn">
@@ -44,7 +43,11 @@
     <!-- content -->
     <main>
         <!-- slider -->
-        <div class="slider">
+        <div class="slider pd_RLauto pd_TBauto">
+            <h2 data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+                <span>Operate for Today,</span>
+                <span>Innovate for Tomorrow</span>
+            </h2>
         </div>
         <!-- slider end -->
 
@@ -54,18 +57,28 @@
 
         <!-- about -->
         <div id="about" class="about pd_RLauto pd_TBauto">
-            <h2 class="about__title">About Us</h2>
-            <div class="about__img" data-aos="fade-right" data-aos-duration="600" data-aos-once="true">
-                <img class="pad" data-aos="fade-down" data-aos-duration="600" data-aos-delay="800" data-aos-once="true"
-                    src="images/img_about_pad.png">
-                <img class="ph" data-aos="fade-down" data-aos-duration="600" data-aos-delay="1200" data-aos-once="true"
-                    src="images/img_about_ph.png">
-            </div>
-        
+            <h2 class="about__title">ABOUT</h2>
             <ul class="about__txt" data-aos="fade-left" data-aos-duration="600" data-aos-once="true">
-                <li>Founded in 2014, we initially provided investment-related services and later collaborated with Thomson Reuters to integrate their Elektron Real Time data source, offering clients comprehensive investment information and system services. Over the past decade, we have developed expertise in big data and analytics in the investment field.</li>
-                <li>In the future, we will partner with other companies to incorporate AI analysis, providing enhanced user experiences and greater investment success.</li>
-                <li>As we embark on this exciting journey together, we remain committed to empowering you with the best tools, data, and insights to achieve your financial goals. Here's to a brighter future of investment success.</li>
+                <li>
+                    RADIANT GROWTH is a leading global wholesale distributor
+                    specializing in premium servers, storage units, networking
+                    equipment, relavant components and accessories. We cater
+                    to a diverse clientele, including colocation facilities, integrators,
+                    service providers, startups, and developers. With decades of
+                    industry experience, we offer customized solutions to optimize
+                    your success.
+                </li>
+                <li>
+                    Our extensive inventory enables us to provide cost-effective
+                    solutions tailored to your objectives. We prioritize exceptional
+                    customer service, swift order processing, and rigorous testing
+                    by our experienced technicians.
+                </li>
+                <li>
+                    For worldwide shipping and inquiries,
+                    contact us at +852 3708 3286 or
+                    email service@radiant-growth.global
+                </li>
             </ul>
         </div>
         <!-- about end -->
@@ -74,128 +87,365 @@
 
 
 
-        <!-- partner -->
-        <ul class="partner">
-            <li data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
-                <a target="_blank" href="https://www.metatrader4.com/en">
-                    <img src="images/img_partner_MT4.png" alt="">
-                </a>
-            </li>
-            <li data-aos="fade-down" data-aos-duration="800" data-aos-once="true">
-                <a target="_blank" href="https://www.thomsonreuters.com/en.html">
-                    <img src="images/img_partner_TR.png" alt="">
-                </a>
-            </li>
-        </ul>
-        <!-- partner end -->
+        <!-- product -->
+        <div id="product" class="product pd_RLauto pd_TBauto">
+            <h2 class="product__title">PRODUCTS</h2>
+            <ul class="product__list">
+                <li class="product__item">
+                    <i class="tag_vendor">DELL</i>
+                    <i class="tag_awaiting">AWAITING</i>
+                    <div class="item__img_box">
+                        <img src="./images/rg/img_R630.jpg" alt="" class="item__img">
+                    </div>
+                    <span class="item__title">DELL POWEREDGE R630 8SFF</span>
+                    <ul class="item__list">
+                        <li class="rack">
+                            1U <code>(rackmount)</code>
+                        </li>
+                        <li class="cpu">up to 2 Xeon E5-2600v3/v4</li>
+                        <li class="ram">
+                            up to 3072GB <code>(24 x DDR4)</code>
+                        </li>
+                        <li class="psu">
+                            2 x PSU <code>(Hot Plug)</code>
+                        </li>
+                    </ul>
+                    <span class="item__price">from $398</span>
+                    <button class="item__btn">Enquiry</button>
+                </li>
+                <li class="product__item">
+                    <i class="tag_vendor">DELL</i>
+                    <i class="tag_awaiting">AWAITING</i>
+                    <div class="item__img_box">
+                        <img src="./images/rg/img_R730xd.jpeg" alt="" class="item__img">
+                    </div>
+                    <span class="item__title">DELL POWEREDGE R730XD 12LFF</span>
+                    <ul class="item__list">
+                        <li class="rack">
+                            2U <code>(rackmount)</code>
+                        </li>
+                        <li class="cpu">up to 2 Xeon E5-2600v3/v4</li>
+                        <li class="ram">
+                            up to 3072GB <code>(24 x DDR4)</code>
+                        </li>
+                        <li class="psu">
+                            2 x PSU <code>(Hot Plug)</code>
+                        </li>
+                    </ul>
+                    <span class="item__price">from $652</span>
+                    <button class="item__btn">Enquiry</button>
+                </li>
+                <li class="product__item">
+                    <i class="tag_vendor">DELL</i>
+                    <i class="tag_awaiting">AWAITING</i>
+                    <div class="item__img_box">
+                        <img src="./images/rg/img_R740xd.jpeg" alt="" class="item__img">
+                    </div>
+                    <span class="item__title">DELL POWEREDGE R740XD 12LFF</span>
+                    <ul class="item__list">
+                        <li class="rack">
+                            2U <code>(rackmount)</code>
+                        </li>
+                        <li class="cpu">up to 2 Xeon Scalable</li>
+                        <li class="ram">
+                            up to 3072GB <code>(24 x DDR4)</code>
+                        </li>
+                        <li class="psu">
+                            2 x PSU <code>(Hot Plug)</code>
+                        </li>
+                    </ul>
+                    <span class="item__price">from $3,358</span>
+                    <button class="item__btn">Enquiry</button>
+                </li>
+                <li class="product__item">
+                    <i class="tag_vendor">DELL</i>
+                    <i class="tag_awaiting">AWAITING</i>
+                    <div class="item__img_box">
+                        <img src="./images/rg/img_R640.jpeg" alt="" class="item__img">
+                    </div>
+                    <span class="item__title">DELL POWEREDGE R640 4LFF</span>
+                    <ul class="item__list">
+                        <li class="rack">
+                            1U <code>(rackmount)</code>
+                        </li>
+                        <li class="cpu">up to 2 Xeon Scalable</li>
+                        <li class="ram">
+                            up to 6144GB <code>(24 x DDR4)</code>
+                        </li>
+                        <li class="psu">
+                            2 x PSU <code>(Hot Plug)</code>
+                        </li>
+                    </ul>
+                    <span class="item__price">from $2,025</span>
+                    <button class="item__btn">Enquiry</button>
+                </li>
+                <li class="product__item">
+                    <i class="tag_vendor">DELL</i>
+                    <i class="tag_awaiting">AWAITING</i>
+                    <div class="item__img_box">
+                        <img src="./images/rg/img_R730.jpeg" alt="" class="item__img">
+                    </div>
+                    <span class="item__title">DELL POWEREDGE R730 8SFF</span>
+                    <ul class="item__list">
+                        <li class="rack">
+                            2U <code>(rackmount)</code>
+                        </li>
+                        <li class="cpu">up to 2 Xeon E5-2600v3/v4</li>
+                        <li class="ram">
+                            up to 3072GB <code>(24 x DDR4)</code>
+                        </li>
+                        <li class="psu">
+                            2 x PSU <code>(Hot Plug)</code>
+                        </li>
+                    </ul>
+                    <span class="item__price">from $470</span>
+                    <button class="item__btn">Enquiry</button>
+                </li>
+                <li class="product__item">
+                    <i class="tag_vendor">DELL</i>
+                    <i class="tag_awaiting">AWAITING</i>
+                    <div class="item__img_box">
+                        <img src="./images/rg/img_C4130.jpeg" alt="" class="item__img">
+                    </div>
+                    <span class="item__title">DELL POWEREDGE C4130</span>
+                    <ul class="item__list">
+                        <li class="rack">
+                            1U <code>(rackmount)</code>
+                        </li>
+                        <li class="cpu">up to 2 Xeon E5-2600v3/v4</li>
+                        <li class="ram">
+                            up to 1024GB <code>(16 x DDR4)</code>
+                        </li>
+                        <li class="psu">
+                            2 x PSU <code>(Hot Plug)</code>
+                        </li>
+                    </ul>
+                    <span class="item__price">from $908</span>
+                    <button class="item__btn">Enquiry</button>
+                </li>
+                <li class="product__item">
+                    <i class="tag_vendor">SUPERMICRO</i>
+                    <i class="tag_awaiting">AWAITING</i>
+                    <div class="item__img_box">
+                        <img src="./images/rg/img_1029GQ.jpeg" alt="" class="item__img">
+                    </div>
+                    <span class="item__title">SUPERMICRO SYS-1029GQ-TVRT</span>
+                    <ul class="item__list">
+                        <li class="rack">
+                            1U <code>(rackmount)</code>
+                        </li>
+                        <li class="cpu">up to 2 Xeon Scalable</li>
+                        <li class="ram">
+                            up to 765GB <code>(12 x DDR4)</code>
+                        </li>
+                        <li class="psu">
+                            2 x PSU <code>(Hot Plug)</code>
+                        </li>
+                    </ul>
+                    <span class="item__price">from $3856</span>
+                    <button class="item__btn">Enquiry</button>
+                </li>
+                <li class="product__item">
+                    <i class="tag_vendor">HP</i>
+                    <i class="tag_awaiting">AWAITING</i>
+                    <div class="item__img_box">
+                        <img src="./images/rg/img_DL380_gen9.jpeg" alt="" class="item__img">
+                    </div>
+                    <span class="item__title">HP PROLIANT DL380 GEN9 8SFF</span>
+                    <ul class="item__list">
+                        <li class="rack">
+                            2U <code>(rackmount)</code>
+                        </li>
+                        <li class="cpu">up to 2 Xeon E5-2600v3/v4</li>
+                        <li class="ram">
+                            up to 3072GB <code>(24 x DDR4)</code>
+                        </li>
+                        <li class="psu">
+                            2 x PSU <code>(Hot Plug)</code>
+                        </li>
+                    </ul>
+                    <span class="item__price">from $452</span>
+                    <button class="item__btn">Enquiry</button>
+                </li>
+                <li class="product__item">
+                    <i class="tag_vendor">HP</i>
+                    <i class="tag_awaiting">AWAITING</i>
+                    <div class="item__img_box">
+                        <img src="./images/rg/img_DL380_gen10.png" alt="" class="item__img">
+                    </div>
+                    <span class="item__title">HP PROLIANT DL380 GEN10 8SFF</span>
+                    <ul class="item__list">
+                        <li class="rack">
+                            2U <code>(rackmount)</code>
+                        </li>
+                        <li class="cpu">up to 2 Xeon Scalable</li>
+                        <li class="ram">
+                            up to 6144GB <code>(24 x DDR4)</code>
+                        </li>
+                        <li class="psu">
+                            2 x PSU <code>(Hot Plug)</code>
+                        </li>
+                    </ul>
+                    <span class="item__price">from $1971</span>
+                    <button class="item__btn">Enquiry</button>
+                </li>
+                <li class="product__item">
+                    <i class="tag_vendor">HP</i>
+                    <i class="tag_awaiting">AWAITING</i>
+                    <div class="item__img_box">
+                        <img src="./images/rg/img_4200_gen9.jpeg" alt="" class="item__img">
+                    </div>
+                    <span class="item__title">HP APOLLO 4200 GEN9 54SFF</span>
+                    <ul class="item__list">
+                        <li class="rack">
+                            1U <code>(rackmount)</code>
+                        </li>
+                        <li class="cpu">up to 2 Xeon E5-2600v3/v4</li>
+                        <li class="ram">
+                            up to 1024GB <code>(16 x DDR4)</code>
+                        </li>
+                        <li class="psu">
+                            2 x PSU <code>(Hot Plug)</code>
+                        </li>
+                    </ul>
+                    <span class="item__price">from $1324</span>
+                    <button class="item__btn">Enquiry</button>
+                </li>
+                <li class="product__item">
+                    <i class="tag_vendor">HP</i>
+                    <i class="tag_awaiting">AWAITING</i>
+                    <div class="item__img_box">
+                        <img src="./images/rg/img_4200_gen10.jpeg" alt="" class="item__img">
+                    </div>
+                    <span class="item__title">HP PROLIANT APOLLO 4200 GEN10 24LFF</span>
+                    <ul class="item__list">
+                        <li class="rack">
+                            2U <code>(rackmount)</code>
+                        </li>
+                        <li class="cpu">up to 2 Xeon Scalable</li>
+                        <li class="ram">
+                            up to 2048GB <code>(16 x DDR4)</code>
+                        </li>
+                        <li class="psu">
+                            2 x PSU <code>(Hot Plug)</code>
+                        </li>
+                    </ul>
+                    <span class="item__price">from $2901</span>
+                    <button class="item__btn">Enquiry</button>
+                </li>
+            </ul>
+        </div>
+        <!-- product end -->
 
 
-
-
-
-        <!-- news -->
-        <div class="news pd_RLauto pd_TBauto">
-        
-            <div class="news__title">Global News</div>
-        
-            <div class="news__item owl-carousel owl-theme servicesCarouse" id="servicesCarouse">
-                <div onclick="window.open('https://www.reuters.com/markets/global-markets-wrapup-1-2023-08-02/','new_window');" class="news__item__txt serviceHref" data-aos="fade-up" data-aos-duration="800" data-aos-once="true"
-                    data-aos-offset="300">
-                    <img src="images/img_news01.jpg">
-                    <h3>Market News</h3>
-                    <p>Stocks drop, Treasuries gain after Fitch downgrades US rating</p>
+        <!-- solution -->
+        <div id="solution" class="solution pd_RLauto pd_TBauto">
+            <h2 class="solution__title">SOLUTIONS</h2>
+            <h3 class="solution__sub_title">Service for your Business</h3>
+            <p class="solution__txt pd_RLauto">We are ready to help you to choose the best-possible server solution for your business needs, Our 10+ years of great experience in IT business and out of the box thinking culture helps us solving the most difficult customer requests.</p>
+            <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item">
+                            <div class="solution__item">
+                                <img src="" alt="" class="solution__item__img">
+                                <h4 class="solution__item__title">DATABASE SERVERS</h4>
+                                <p class="solution__item__txt">Looking for a server for MySQL. Oracle, MSSQL or PostgreSQL? We can find you a great and very affordable solution which will solve this issue. Send us your request with the detailed introductions, and our experienced DevOps architects will do the remaining part.</p>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="solution__item">
+                                <img src="" alt="" class="solution__item__img">
+                                <h4 class="solution__item__title">VIRTUALIZATION SERVERS</h4>
+                                <p class="solution__item__txt">We know everything about virtualization servers, most importantly. We know how to deploy ESXI or Hyper-V on a bugget! Inform us about your working model and we will offer you several virtualization servers to choose from.</p>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="solution__item">
+                                <img src="" alt="" class="solution__item__img">
+                                <h4 class="solution__item__title">TERMINAL SERVERS</h4>
+                                <p class="solution__item__txt">Planning to implement resource optimization or create a unified data-center for AUTOCAD? Our experienced team of DevOps engineers will find the best RDP and VDI solution for you. Send us your request and we will find a server for you.</p>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="solution__item">
+                                <img src="" alt="" class="solution__item__img">
+                                <h4 class="solution__item__title">FILE SERVERS</h4>
+                                <p class="solution__item__txt">Planning to launch a file server or upgrade NAS? We can provide reliable solutions from DELL and HP, which will allow you to deploy any network access protocols for files with a high level of security.</p>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="solution__item">
+                                <img src="" alt="" class="solution__item__img">
+                                <h4 class="solution__item__title">SERVERS FOR YOUR OFFICE</h4>
+                                <p class="solution__item__txt">Looking for a quiet and powerful server for your office tasks? We can customize your new server according to your particular needs. Give us the input data and we will get back with a great solution!</p>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="solution__item">
+                                <img src="" alt="" class="solution__item__img">
+                                <h4 class="solution__item__title">SERVERS WITH GPU</h4>
+                                <p class="solution__item__txt">Need a GPU server for your business needs? Or maybe you need just a server or a GPU? Contact us and our certified engineers will find the best option to make it happen.</p>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="solution__item">
+                                <img src="" alt="" class="solution__item__img">
+                                <h4 class="solution__item__title">VIDEO SURVEILLANCE STORAGE SERVERS</h4>
+                                <p class="solution__item__txt">Planning to launch Trassir or Ividen video surveillance service? We have a great experience launching video surveillance services in many different companies. Send us your input-data and we will get back to you shortly!</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div onclick="window.open('https://www.reuters.com/sustainability/investors-green-companies-still-hard-find-with-new-emissions-reporting-rules-2023-08-02/','new_window');" class="news__item__txt serviceHref" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800"
-                    data-aos-once="true">
-                    <img src="images/img_news02.jpg">
-                    <h3>Carbon Market</h3>
-                    <p>For investors, green companies still hard to find with new emissions reporting rules</p>
-                </div>
-                <div onclick="window.open('https://www.reuters.com/technology/investing-ai-how-avoid-hype-2023-05-26/','new_window');" class="news__item__txt serviceHref" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1600"
-                    data-aos-once="true">
-                    <img src="images/img_news03.jpg">
-                    <h3>Market News</h3>
-                    <p>Investing in AI: how to avoid the hype</p>
+                <div class="owl-dots disabled">
+                    <button role="button" class="owl-dot active">
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </div>
-        <!-- news end -->
-
-
+        <!-- solution end -->
 
 
         <!-- contact -->
         <div id="contact" class="contact pd_RLauto pd_TBauto" id="contact">
-            <h2 class="contact__title">Venture Beyond to Find New Opportunities</h2>
+            <h2 class="contact__title">CONTACT</h2>
 
-            <div class="contact__txt">
-                <p data-aos="fade-down" data-aos-duration="800">We value your privacy and are committed to protecting your information with utmost confidentiality.<br>
-                If you wish to find out more about our approach, wealth services or arrange for a non-obligatory consultation, please
-                reach out to us.</p>
-
-                <button onclick="location.href='mailto:contactus@caulfield-investment.global';" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200" class="more_btn" data-txt="Contact Us"></button>
+            <div class="contact__address">
+                <i class="icon_address" data-aos="fade-down" data-aos-duration="800"></i>
+                <code data-aos="fade-up" data-aos-duration="800">Our Address</code>
             </div>
 
             <ul class="contact__item">
                 <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
-                    <a href="mailto:contactus@caulfield-investment.global">
-                        <i class="icon_mail"></i>
-                        <code>contactus@caulfield-investment.global</code>
-                    </a>
-                </li>
-            
-                <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800">
-                    <a href="tel:+85237575623">
-                        <i class="icon_tel"></i>
-                        <code>+852 3757 5623</code>
-                    </a>
-                </li>
-                <li data-aos="zoom-in" data-aos-duration="800"  data-aos-delay="1200">
                     <a class="no_hand">
-                        <i class="icon_address"></i>
                         <code>
-                            Rm 1805-06, 18/F, Hollywood Plaza, 610 Nathan Road, Kowloon, Hong Kong
+                            Unit 1104A, 11/F, Kai Tak Commercial Building, No. 317-319 Des Voeux Road Central, Hong Kong.
                         </code>
+                    </a>
+                </li>
+                <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800">
+                    <a href="tel:+85237083286">
+                        <i class="icon_tel"></i>
+                        <code>+852 3708 3286</code>
+                    </a>
+                </li>
+                <li data-aos="zoom-in" data-aos-duration="800" data-aos-delay="800">
+                    <a href="mailto:service@radiant-growth.global">
+                        <i class="icon_mail"></i>
+                        <code>service@radiant-growth.global</code>
                     </a>
                 </li>
             </ul>
         </div>
         <!-- contact end -->
 
-
-
-
-
-        <!-- link -->
-        <div class="link pd_RLauto pd_TBauto">
-            <ul class="link__item">
-                <li data-aos="zoom-in-up" data-aos-duration="800"><a target="_blank" href="https://finance.yahoo.com/">
-                    <img src="images/img_link01.png" alt="Yahoo Finance">
-                </a></li>
-                <li data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="400"><a target="_blank" href="https://www.cnbc.com/">
-                    <img src="images/img_link02.png" alt="CNBC">
-                </a></li>
-                <li data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="800"><a target="_blank" href="https://www.marketwatch.com/">
-                    <img src="images/img_link03.png" alt="MarketWatch">
-                </a></li>
-                <li data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="1200"><a target="_blank" href="https://www.bloomberg.com/">
-                    <img src="images/img_link04.png" alt="Bloomberg">
-                </a></li>
-                <li data-aos="zoom-in-up" data-aos-duration="800"><a target="_blank" href="https://www.wsj.com/">
-                    <img src="images/img_link05.png" alt="Wall Street Journal">
-                </a></li>
-                <li data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="400"><a target="_blank" href="https://www.reuters.com/">
-                    <img src="images/img_link06.png" alt="Reuters">
-                </a></li>
-            </ul>
-        </div>
-        <!-- link end -->
     </main>
     <!-- content end -->
 
     <footer class="pd_RLauto">
         <!-- copyright -->
-        <div class="copyright">COPYRIGHT © 2014-2023 CAULFIELD INVESTMENT LIMITED. ALL RIGHTS RESERVED.</div>
+        <div class="copyright"> © 2024 RADIANT GROWTH All Rights Reserved.</div>
         <!-- copyright end -->
     </footer>
 

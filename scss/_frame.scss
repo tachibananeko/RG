@@ -13,10 +13,9 @@ h1 {
         content: '';
         display: block;
         flex: none;
-        width: 30px;
+        width: 220px;
         height: 30px;
-        background: url(../images/icon_header_logo.svg) no-repeat center / cover;
-        margin-right: 5px;
+        background: url(../images/rg/Radiant_logo.svg) no-repeat center / cover;
     }
 
     code{
@@ -36,7 +35,7 @@ header{
     height: 64px;
     padding-top: 8px;
     padding-bottom: 8px;
-    background: map-get($bg_color, black);
+    background: map-get($bg_color, gray);
     box-shadow: 0 0 0 transparent;
     z-index: 9;
 
@@ -52,7 +51,7 @@ header{
     .menu{
         @include d_f(flex, center, 0);
         margin-left: auto;
-        color: map-get($txt_color, secondary);
+        color: map-get($txt_color, primary);
         
         @include mw_md{
             position: fixed;
@@ -102,6 +101,7 @@ header{
 
             // 手指效果
             @include hoverHandler {
+                color: map-get($txt_color, secondary);
                 &::before {
                     left: 0;
                     right: 0;
@@ -164,8 +164,8 @@ footer{
     padding: 10px;
     padding-bottom: calc(10px + constant(safe-area-inset-bottom));
     padding-bottom: calc(10px + env(safe-area-inset-bottom));
-    background: map-get($bg_color, black);
-    color: map-get($txt_color, white);
+    background: map-get($bg_color, gray);
+    color: map-get($txt_color, primary);
     font-size: 12px;
     text-align: center;
 }

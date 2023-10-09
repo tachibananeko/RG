@@ -6,7 +6,7 @@
     background: url(../images/img_slider.jpg) no-repeat center/cover;
     padding-top: 10%;
     padding-bottom: 10%;
-    @include mw_sm{
+    @include mw_xs{
         padding-top: 30%;
         padding-bottom: 30%;
     }
@@ -47,11 +47,12 @@
         }
     }
     h2{
-        font-size: 60px;
+        font-size: 4vw;
         font-weight: 700;
         color: map-get($txt_color, white);
-        margin: 130px 0;
-        @include mw_sm{
+        margin: 110px 0;
+        text-shadow: 2px 2px #000;
+        @include mw_xs{
             font-size: 32px;
             margin: 0;
         }
@@ -128,7 +129,7 @@
     // .about__txt
     &__txt {
         width: 50%;
-        text-shadow: 0 0 5px map-get($txt_color, lightshadow);
+        text-shadow: 0 0 5px map-get($txt_color, shadow);
 
         @include mw_xs {
             width: 100%;
@@ -150,6 +151,7 @@
             display: inline-block;
             position: relative;
             color: map-get($txt_color, primary);
+            text-shadow: none;
             &:hover:before{
                 width: 100%;
             }
@@ -189,24 +191,25 @@
     // .product__item
     &__item{
         @extend %hand;
+        @extend %transition;
         position: relative;
         width: 22%;
-        padding: 20px;
+        padding: 20px 20px 70px;
         border-radius: 8px;
         margin: 0 10px 40px;
         background: map-get($bg_color, primary);
         border: 3px solid transparent;
         @include mw_custom(min, 1600px){
-            width: 17%;
+            width: calc(100% / 5 - 20px);
         }
         @include mw_sm{
-            width: 30%;
+            width: calc(100% / 3 - 20px);
         }
         @include mw_xs{
-            width: 44%;
+            width: calc(100% / 2 - 20px);
         }
         @include mw_custom(max, 480px){
-            width: 80%;
+            width: calc(100% - 20px);
         }
         &:hover{
             border-color: #B78959;
@@ -298,6 +301,7 @@
             }
             // .item__btn
             &__btn{
+                @include pos_a(rbl, 0, 20px, 0);
                 display: block;
                 width: 55%;
                 margin: auto;

@@ -109,6 +109,10 @@ $(window).ready(function(){
             1180: {
                 items: 3,
                 margin: 32
+            },
+            1440: {
+                items: 4,
+                margin: 32
             }
         }
     })

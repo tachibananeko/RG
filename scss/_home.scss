@@ -171,7 +171,7 @@
 
 // 產品
 .product{
-    background: map-get($bg_color, primary);
+    background: map-get($bg_color, gray);
     // .product__title
     &__title{
         @extend %title;

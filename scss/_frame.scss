@@ -51,7 +51,7 @@ header{
     .menu{
         @include d_f(flex, center, 0);
         margin-left: auto;
-        color: map-get($txt_color, white);
+        color: map-get($txt_color, primary);
         
         @include mw_md{
             position: fixed;
@@ -60,6 +60,7 @@ header{
             flex-direction: column;
             width: 100%;
             height: 100%;
+            color: map-get($txt_color, white);
             background: map-get($bg_color, black_alpha);
             z-index: 3;
 

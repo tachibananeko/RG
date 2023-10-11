@@ -152,8 +152,11 @@
             position: relative;
             color: map-get($txt_color, primary);
             text-shadow: none;
-            &:hover:before{
-                width: 100%;
+
+            @include hoverHandler{
+                &::before{
+                    width: 100%;
+                }
             }
         }
         a:before{
@@ -191,14 +194,14 @@
     // .product__item
     &__item{
         @extend %hand;
-        @extend %transition;
         position: relative;
         width: 22%;
         padding: 20px 20px 70px;
         border-radius: 8px;
         margin: 0 10px 40px;
         background: map-get($bg_color, primary);
-        border: 3px solid transparent;
+        
+
         @include mw_custom(min, 1600px){
             width: calc(100% / 5 - 20px);
         }
@@ -211,9 +214,22 @@
         @include mw_custom(max, 480px){
             width: calc(100% - 20px);
         }
-        &:hover{
-            border-color: #B78959;
+
+        &::after{
+            @extend %transition;
+            @include pos_a(trbl, 0);
+            content: '';
+            margin: auto;
+            border: 3px solid transparent;
+            border-radius: 5px;
         }
+
+        @include hoverHandler {
+            &::after{
+                border-color: #B78959;
+            }
+        }
+
         .tag_vendor{
             position: absolute;
             top: 20px;
@@ -308,7 +324,8 @@
                 color: map-get($txt_color, white);
                 background: linear-gradient(to right, #86521b 0%, #e8c298 100%);
                 border-radius: 8px;
-                &:hover{
+
+                @include hoverHandler{
                     background: linear-gradient(to left, #86521b 0%, #e8c298 100%);
                 }
                 a{

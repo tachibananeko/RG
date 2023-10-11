@@ -173,14 +173,14 @@ $breakpoints: (
 	}
 }
 
-@mixin mw_custom($minmax, $breakpoints) {
+@mixin mw_custom($minmax, $widthpoints) {
 	@if $minmax==min{
-		@media screen and (min-width: $breakpoints) {
+		@media screen and (min-width: $widthpoints) {
 			@content;
 		}
 	}
 	@else{
-		@media screen and (max-width: $breakpoints) {
+		@media screen and (max-width: $widthpoints) {
 			@content;
 		}
 	}

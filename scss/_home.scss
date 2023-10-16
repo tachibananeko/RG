@@ -246,6 +246,8 @@
             color: map-get($txt_color, white);
             background: map-get($bg_color, secondary);
             font-size: 14px;
+
+            display: none;
         }
         .item{
             // .item__img_box

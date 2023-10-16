@@ -222,6 +222,7 @@
             margin: auto;
             border: 3px solid transparent;
             border-radius: 5px;
+            pointer-events: none;
         }
 
         @include hoverHandler {
